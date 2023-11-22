@@ -1,0 +1,404 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar start */
+#navbar {
+    background: white;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1p 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: orange;
+}
+
+.navbar-toggler span {
+    color: orange;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: orange;
+    color: aliceblue;
+}
+
+#navbar form button {
+    background: orange;
+    color: white;
+    border: none;
+}
+
+/* Navbar end */
+
+
+/* Home section start */
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h5 {
+    color: aliceblue;
+    font-size: 38px;
+    font-weight: 600;
+    text-shadow: 0px 1x 1px black;
+}
+
+.home .content h1 {
+    color: aliceblue;
+    font-size: 70px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: orange;
+    text-shadow: 0px 1px 1px black;
+    animation: changestxt 10s infinite linear;
+}
+
+@keyframes changestxt {
+    0% {
+        content: "France";
+        color: red;
+    }
+
+    20% {
+        content: "Spain";
+        color: green;
+    }
+
+    30% {
+        content: "United States";
+        color: yellow;
+    }
+
+    40% {
+        content: "China";
+        color: pink;
+    }
+
+    50% {
+        content: "Italy";
+        color: violet;
+    }
+
+    60% {
+        content: "Turkey";
+        color: aqua;
+    }
+
+    70% {
+        content: "Mexico";
+        color: blue;
+    }
+
+    80% {
+        content: "Pakishtan";
+        color: blueviolet;
+    }
+
+    90% {
+        content: "Caneda";
+        color: gold;
+    }
+
+    100% {
+        content: "India";
+        color: linear-gradient(orange, white, green);
+    }
+}
+
+.home .content p {
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 600px;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a {
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style: none;
+}
+
+.home .content a:hover {
+    color: white;
+    background: orange;
+}
+
+/* Home section end */
+@media only screen and (max-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width:450px) {
+    .home .content h1 {
+        font-size: 38px;
+    }
+
+    .home .content h5 {
+        font-size: 25px;
+    }
+
+    .home .content p {
+        font-size: 25px;
+    }
+}
+
+/* section book  */
+.book {
+    background: white;
+    padding: 50px;
+}
+
+.main-text h1 {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.main-text span {
+    color: orange;
+}
+
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px -69px black;
+}
+
+.book .row {
+    margin-top: 30px;
+}
+
+.book form input {
+    padding: 10px;
+    color: black;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    background: orange;
+    color: aliceblue;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.book .submit:hover {
+    width: 170px;
+}
+
+@media(max-width:765px) {
+    .book {
+        padding: 0;
+
+    }
+
+    .main-text h1 {
+        padding: 20px;
+    }
+}
+
+/* section book  */
+/* section pakeges */
+.main-text h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.main-text h1 span {
+    color: orange;
+}
+
+.packages .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgb(0, 0, 0, 0.1)0px 1px 2px;
+}
+
+.packages .card img {
+    border-radius: 5px;
+
+}
+
+.packages .card .card-body {
+    background: transparent;
+}
+
+.packages .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages .card .card-body p {
+    font-size: 15px;
+}
+
+.checked {
+    color: orange;
+}
+
+.star i {
+    font-size: 15px;
+}
+
+.packages .card .card-body h6 {
+    font-size: 20px;
+}
+
+.packages .card .card-body a {
+    padding: 10px;
+    text-decoration: none;
+    background: orange;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* section pakeges */
+
+/* section service */
+.services {
+    background: aliceblue;
+    margin-top: 50px;
+}
+
+.services .card {
+    box-shadow: 0px 5px 5px -6px black;
+    border: none;
+    cursor: pointer;
+}
+
+.services .card i {
+    font-size: 80px;
+    text-align: center;
+    color: orange;
+    margin-top: 20px;
+}
+
+.services .card .card-body h3 {
+    font-weight: 600;
+}
+
+/* section service */
+
+/* section gallry start  */
+.gallary {
+    margin-top: 50px;
+}
+
+.gallary .card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1)0px 4px 12px;
+    cursor: pointer;
+}
+
+.gallary .card .iṁg {
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.gallary .card img:hover {
+    transform: scale(1.1);
+}
+
+/* section gallry end  */
+
+/* section about start  */
+.about {
+    margin-top: 50px;
+    background: white;
+}
+
+.about .card {
+    border-radius: 10px;
+}
+
+.about .card img {
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.about p {
+    font-weight: 500;
+}
+
+#about-btn {
+    width: 150px;
+    height: 38px;
+    border: none;
+    background: orange;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    width: 170px;
+    color: white;
+    background: #000;
+}
+
+/* section about end  */
